@@ -1,0 +1,25 @@
+/*! global css */
+@import url(base.css);
+
+
+
+/*! layout css */
+@import url(layout/header.css);
+@import url(layout/footer.css);
+
+
+
+
+
+/*! components css */
+@import url(components/campaings.css);
+@import url(components/single.css);
+@import url(components/modal-search.css);
+
+
+
+
+
+
+/*! pages css */
+@import url(pages/home.css);

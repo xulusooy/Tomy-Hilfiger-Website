@@ -1,0 +1,24 @@
+.single .single-container{
+max-width:1200px;
+width:100%;
+margin:auto;
+}
+
+.single{
+margin-top:70px;
+}
+
+.single .single-wrapper > div{
+flex:1;
+}
+
+
+.single .single-column h2{
+margin-bottom:40px;
+font-size:35px;
+color:#00174F;
+}
+
+.single .single-column p{
+color:#00174F;
+}

@@ -1,0 +1,107 @@
+/*! base start */
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&display=swap");
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Jost", sans-serif;
+}
+
+body{
+overflow-x:hidden;
+}
+
+
+ul,
+ol{
+margin:0;
+padding:0;
+list-style:none;
+}
+
+
+a{
+text-decoration:none;
+color:black;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+ margin:0;
+}
+
+
+.container{
+max-width:1800px;
+width:100%;
+margin:0 50px;
+}
+
+
+.btn-primary{
+line-height:40px;
+padding:0 70px;
+border:none;
+background-color:#fff;
+font-weight:600;
+color:#00174F;
+transition:0.3s ease all;
+}
+
+
+.btn-primary:hover{
+background-color: #00174F;
+color:white;
+}
+
+
+/*! base end */
+
+
+
+
+/*! base responsive start */
+@media (max-width:1200px){
+.container{
+max-width:992px;
+}
+}
+
+
+@media (max-width:992px){
+.container{
+max-width:768px;
+}
+}
+
+
+@media (max-width:768px){
+.container{
+max-width:576px;
+}
+}
+
+
+@media (max-width:576px){
+.container{
+max-width:420px;
+}
+}
+
+
+@media (max-width:420px){
+.container{
+max-width:350px;
+}
+}
+
+/*! base responsive end */
+

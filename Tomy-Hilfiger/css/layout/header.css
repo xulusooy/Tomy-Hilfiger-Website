@@ -1,0 +1,254 @@
+/*! header start */
+
+.global-notification {
+    background-color: #00174F;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 13px;
+}
+
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #dee0ea;
+}
+
+
+.header-row {
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    position: relative;
+}
+
+
+.header-wrapper .bi.bi-list {
+    font-size: 25px;
+    font-weight: 600;
+    display: none;
+}
+
+
+.header-wrapper .search-form {
+    display: flex;
+    position: relative;
+}
+
+
+.header-wrapper .search-form input {
+    height: 40px;
+    padding: 0 50%;
+    display: inline-block;
+    outline: none;
+    border: 1px solid #00174F;
+}
+
+
+.header-wrapper .search-form input::placeholder {
+    position: absolute;
+    left: 20px;
+    top: 8px;
+    font-size: 15px;
+    color: #00174F;
+}
+
+.header-wrapper .search-form button {
+    position: absolute;
+    right: -90%;
+    top: 13%;
+    background-color: transparent;
+    border: none;
+}
+
+
+.header-wrapper .search-form button i {
+    color: #00174F;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header-wrapper .header-right {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.header-wrapper .header-account {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    color: #00174F;
+}
+
+.header-wrapper .header-account span {
+    font-size: 12px;
+}
+
+.header-wrapper .header-right i {
+    font-size: 18px;
+    color: #00174F;
+}
+
+.header-wrapper .header-heart-links {
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+}
+
+
+
+.header-required .menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -2.8%;
+    margin-bottom: 10px;
+    column-gap: 30px;
+}
+
+.header-required .menu-list a {
+    font-weight: bold;
+    color: #00174F;
+    text-transform: uppercase;
+    font-size: 13px;
+    position: relative;
+}
+
+
+.header-required .search-slipe{
+display:none;
+cursor:pointer;
+}
+
+
+.header-required .menu-list a::after{
+content:"";
+height:1px;
+width:0;
+background-color:#00174F;
+position:absolute;
+bottom:-2px;
+left:50%;
+transform:translate(-50%);
+transition:.3s ease all;
+}
+
+
+.header-required .menu-list .list-item:hover a::after{
+width:50px;
+}
+
+
+    .header-required .search-slipe input{
+        height: 40px;
+        padding: 0 10%; 
+        display:block;
+        outline: none;
+        width:95%;
+        margin-left:18px;
+        border:1px solid #00174F;
+        display:none;
+    }
+
+
+.header-required .search-slipe{
+position: relative;
+}
+
+
+.header-required .search-slipe i{
+position:absolute;
+top:8px; 
+right:15px;
+color: #00174F;
+font-size:18px;
+}
+
+
+.header-required .bi-x-circle{
+display:none;
+}
+
+
+/*! header end */
+
+
+/*! header responsive start */
+@media (max-width:650px) {
+    .header-center .search-form {
+        display: none;
+    }
+
+
+    .header-wrapper .bi.bi-list {
+        display: inline-block;
+        position: absolute;
+        left:30px;
+        top: -20%;
+        font-size:24px;
+        cursor:pointer;
+    }
+
+    
+    .header-required{
+     position:absolute;
+     top:-140%;
+     height:120vh;
+     margin-top:31.4%;  
+     left:0;
+     width:100%;
+     display:block;
+     background-color:#fff;
+     z-index:1;
+     transition:.7s ease all;   
+    }
+
+    .header-required .menu-list{
+    flex-direction:column;
+    padding:50px 80px;
+    }
+
+    .header-required .menu-list a{
+    display:inline-block;
+    font-size:15px;
+    }
+
+    .header-required .menu-list .list-item{
+    display:flex;
+    align-items:center;
+    height:90px;
+    }
+
+
+    .header-required .bi-x-circle{
+    position:absolute;
+    top:15px;
+    right:15px;
+    font-size:18px;
+    display:inline-block;   
+    }
+
+
+    .header-required .search-slipe input{
+        height: 40px;
+        padding: 0 10%; 
+        display:block;
+        outline: none;
+        width:95%;
+        margin-left:18px;
+        border:1px solid #00174F;
+        display:inline-block;
+    }
+    
+
+}
+
+/*! header responsive end */
